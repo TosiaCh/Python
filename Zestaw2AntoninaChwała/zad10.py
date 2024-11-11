@@ -1,0 +1,10 @@
+print('Napisz coś, a ja policzę ile napisany tekst zawiera wyrazów!')
+line = input()
+print(line)
+#line='a\tb c\nd'
+line = line.replace('\\t', '\t').replace('\\n', '\n')
+x = line.split()
+print(x)
+sum=len(x)
+print(sum)
+print('Twoje zdanie składa się z '+sum+'słów')
